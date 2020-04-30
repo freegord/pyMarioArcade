@@ -15,7 +15,7 @@ JUMP_SPEED = 10
 GRAVITY = 0.5
 
 
-class MyGame(arcade.Window):
+class MarioArcade(arcade.Window):
 
 	def __init__(self):
 
@@ -224,7 +224,7 @@ class MyGame(arcade.Window):
 
 
 def main():
-	window = MyGame()
+	window = MarioArcade()
 	if os.path.exists("save.json"):
 		print ("Found previous save. L to load, any other key to start a new game")
 		inp = input()
